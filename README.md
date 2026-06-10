@@ -50,5 +50,5 @@ Detalle: Se uso el ignoreCase para evitar que las mayusculas ocaciones un retorn
     } 
 
 ### Captura de salida en consola para ejercicio 2
-![alt text](image-3.png)
+![alt text](image-6.png)
 
