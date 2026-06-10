@@ -15,7 +15,9 @@ public class Ejercicio2 {
 
         return texto.equalsIgnoreCase(invert);
 
+        //ES MAS SENCILLO USANDO EL METODO YA CREADO QUE HACE LO MISMO
+        
         //String invertido = new Ejercicio1().invertString(texto);
-        //return texto.equals(invertido);    MAS SENCILLO USANDO EL METODO YA CREADO
+        //return texto.equals(invertido);    
     } 
 }
