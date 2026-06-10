@@ -9,32 +9,33 @@ public class App {
         runLinkedList();
         runQueue();
         runStack();
+        System.out.println();
+        System.out.println("//////////////////////////////////////////////////////////////////////////////");
+        System.out.println("Ejercicio 2: Palindromo");
+        System.out.println("Palabra 1: Radar -deve retornar true"+"\nPalabra2: Computacion -deve retornar false");
+        Ejercicio2 palindromoController = new Ejercicio2();
+        System.out.println("Radar es palindromo? " + palindromoController.esPalindromo("Radar"));
+        System.out.println("Computacion es palindromo? " + palindromoController.esPalindromo("Computacion"));
+        System.out.println("//////////////////////////////////////////////////////////////////////////////");
+        System.out.println();
     }
-
     private static void runStack() {
         Ejercicio1 invertController = new Ejercicio1();
-
         System.out.println("////////PILA///////");
-
         Stack<String> pila = new Stack<>();
         pila.push("A");
         pila.push("B");
         pila.push("C");
-
         String elemento = pila.pop();
         System.out.println(pila.size());
         System.out.println(elemento);
-
         Deque<String> pila2 = new ArrayDeque<>();
         Deque<String> pila3 = new ArrayDeque<>();
         Deque<String> pila4 = new ArrayDeque<>();        
-
         System.out.println("PALABRA A INVERTIR : COMPUTACION");
         String n = invertController.invertString("COMPUTACION");
         System.out.println(n);
-
     }
-
     private static void runQueue() {
         System.out.println("Lista de la forma Cola/////////////////////");
         Queue<String> cola = new ArrayDeque<>();
@@ -46,29 +47,23 @@ public class App {
         System.out.println("¿cual es el peek?: "+ cola.peek());
         System.out.println("¿Cual es el primero en atenderse?: " + cola.poll());  //saca el objeto o primitivo y se sale del arreglo, por lo cual podemos guardarlo auxiliarmente en otra variable
         System.out.println(cola.size());
-
         // ofer ----> agrega al final
         //peek -----> devuelve el primero sin eliminar
         //poll -----> devuelve el primero y lo elimina
-
         while (!cola.isEmpty()) {
             String cliente = cola.poll();
             System.out.println("Atendi al Cliente: " + cliente);
         }
-        
     }
-
     private static void runLinkedList() {
         System.out.println("Lista Enlazada / linkedlist");
         LinkedList<String> nombres = new LinkedList();
         System.out.println("¿Esta vacio?: " + (nombres.isEmpty()));
         System.out.println("Tamanio: "+ nombres.size());
-
         nombres.add("Juan");
         nombres.add("Pedro");
         nombres.add("Maria");
         nombres.add("Diego");
-
         System.out.println("¿Esta vacio?: " + (nombres.isEmpty()));
         System.out.println("Tamanio: "+ nombres.size());
 

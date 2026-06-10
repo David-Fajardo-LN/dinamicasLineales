@@ -1,13 +1,9 @@
 import java.util.ArrayDeque;
 import java.util.Deque;
 
-public class Ejercicio1 {
+public class Ejercicio2 {
+    public boolean esPalindromo(String texto) {
 
-    //Devuelve cadena de texto invertida
-    //Texto : COMPUTACION
-    //invertido: NOICATUPMOC
-    
-    public String invertString(String texto){
         Deque<Character> pila = new ArrayDeque<>();
         String invert = "";
         for(char letra : texto.toCharArray()){
@@ -17,6 +13,9 @@ public class Ejercicio1 {
             invert += pila.pop();
         }
 
-        return invert;
-    }
+        return texto.equalsIgnoreCase(invert);
+
+        //String invertido = new Ejercicio1().invertString(texto);
+        //return texto.equals(invertido);    MAS SENCILLO USANDO EL METODO YA CREADO
+    } 
 }
