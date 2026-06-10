@@ -9,6 +9,11 @@ public class App {
         runLinkedList();
         runQueue();
         runStack();
+        Ejercicio1 controller1 = new Ejercicio1();
+        System.err.println("///////////// Ejercicio 1 //////////////");
+        System.err.println("Palabra : COMPUTACION");
+        System.err.println("Invertido: "+ controller1.invertString("COMPUTACION"));
+
         System.out.println();
         System.out.println("//////////////////////////////////////////////////////////////////////////////");
         System.out.println("Ejercicio 2: Palindromo");
